@@ -1,0 +1,35 @@
+C
+C E G #label
+G B D
+F A C
+F A C E
+
+C E G B #add
+C E B G
+D F A F
+B F A D #chord2
+
+C B
+B G #P5 = 4
+D G
+E G
+
+C E G B #add
+C E B C
+D F A F
+D G B A #chord3
+C B
+G B C #(P3 = 1) + (P4 = 2) = 3
+B D
+A F
+
+C E G C #sub
+D F A F
+C F A F
+B E C D
+B F A D
+D G B A
+
+D G F B
+C G E B
+C E G B
