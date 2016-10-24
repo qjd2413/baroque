@@ -1,35 +1,52 @@
-C
-C E G #label
-G B D
-F A C
-F A C E
+**kern  **kern  **kern  **kern
+*k[]    *k[]    *k[]    *k[]
+*C:     *C:     *C:     *C:
+*clefF4 *clefC3 *clefG2 *clefG2
+*M4/4   *M4/4   *M4/4   *M4/4
+!! main label
+=1      =1      =1      =1
+4CC     4E      4g      4gg
+4G      4B      4b      4dd
+4F      4A      4c      8cc
+.       .       .       8ee
 
-C E G B #add
-C E B G
-D F A F
-B F A D #chord2
+!! addi chord2, 0, 4
+4CC     4E      4g      4bb
+=2      =2      =2      =2
+2CC     2E      2bb     2gg
+4DD     4F      4g      4ff
+4BB     4F      4a      4dd
+=3      =3      =3      =3
+4CC     2r      4r      4bb
+4BB     .       4gg     2.r
+4DD     .       4gg     4r
+4EE     .       4gg     .
 
-C B
-B G #P5 = 4
-D G
-E G
+!! addi chord3, 0, 3
+=4      =4      =4      =4
+4EE     4C      4g      4cc
+4EE     4C      4g      4bb
+4FF     4D      4a      4ff
+4GG     4D      4b      4dd
+=5      =5      =5      =5
+4CC     1r      4r      4bb
+4GG     .       4b      4cc
+4BB     .       2r      4dd
+4AA     .       .       4ff
 
-C E G B #add
-C E B C
-D F A F
-D G B A #chord3
-C B
-G B C #(P3 = 1) + (P4 = 2) = 3
-B D
-A F
+!! sub  retval, chord2, chord3
+=6      =6      =6      =6
+4CC     4E      4g      4cc
+4DD     2F      2a      2ff
+4CC     .       .       .
+4BB     4E      4c      4dd
+=7      =7      =7      =7
+2BB     2F      2a      2dd
+2DD     2G      2b      2aa
 
-C E G C #sub
-D F A F
-C F A F
-B E C D
-B F A D
-D G B A
-
-D G F B
-C G E B
-C E G B
+!! return
+=8      =8      =8      =8
+4DD     4G      4b      4f
+4CC     4G      4b      4e
+2CC     2G      2b      2e
+*-      *-      *-      *-

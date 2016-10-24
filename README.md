@@ -1,7 +1,7 @@
 # baroque
 an esoteric program interpreter that translates musical notation to machine language
 
-### Humdrum \*\*kern
+## Humdrum \*\*kern
 baroque reads music scores represented in the [Humdrum \*\*kern format](http://www.music-cog.ohio-state.edu/Humdrum/representations/kern.html). Below are the first two measures of Haydn's Minuetto 4 from String Quartet in G major (which happens to translate to a multiply instruction in baroque).
 ```
 **kern  **kern  **kern  **kern
@@ -20,3 +20,6 @@ baroque reads music scores represented in the [Humdrum \*\*kern format](http://w
 ==  ==  ==  ==
 *-  *-  *-  *-
 ```
+
+### Key detection
+The key detection reads the top block to find a line of the form `*k[ .. ]`. It does not pay attention to the actual content of the signature, only the amount of sharps or flats. If that does not find anything, it looks for a line that follows the form `*<KEY>:`.
